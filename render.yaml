@@ -2,9 +2,8 @@ services:
   - type: web
     name: hubspot-mock-api
     runtime: node
-    rootDir: hubspot-mock-api
-    buildCommand: npm install
-    startCommand: npm start
+    buildCommand: cd hubspot-mock-api && npm install
+    startCommand: cd hubspot-mock-api && npm start
     envVars:
       - key: PORT
         value: 10000
